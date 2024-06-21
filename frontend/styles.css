@@ -1,0 +1,112 @@
+/* Resetting some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background animation */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(270deg, #ff6f91, #ff9671, #ffc75f, #f9f871);
+    background-size: 800% 800%;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+/* Gradient animation keyframes */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+/* Center container */
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 500px;
+}
+
+/* Responsive form */
+form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input {
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+input:focus {
+    border-color: #ff6f91;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #ff6f91;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ff9671;
+}
+
+/* Result display */
+#result {
+    margin-top: 20px;
+    word-wrap: break-word;
+    font-size: 18px;
+    color: #ff6f91;
+}
+
+#result a {
+    color: #ff6f91;
+    text-decoration: none;
+}
+
+#result a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive text adjustments */
+@media (max-width: 400px) {
+    input {
+        font-size: 14px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    #result {
+        font-size: 16px;
+    }
+}
