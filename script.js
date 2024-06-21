@@ -6,7 +6,7 @@ document.getElementById('url-form').addEventListener('submit', async (e) => {
     resultDiv.innerHTML = '';
 
     try {
-        const response = await fetch('https://shawty.up.railway.app/api/short', {
+        const response = await fetch('https://shawtt.up.railway.app/api/short', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
